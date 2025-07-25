@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Menyembunyikan scrollbar */
+}
+
+.hero-section {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* iyeu jang halaman mikrotik */
+.hero-section3 {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* transisi untuk di mikrotik */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+/* jang darkmode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .brand {
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode .dm {
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode.isi {
+  color: white !important;
+}
+
+.navbar.dark-mode {
+  background-color: #1f1f1f !important;
+}
+
+.navbar.dark-mode .nav-link {
+  color: #f1f1f1 !important;
+}
+
+.hero-section.dark-mode {
+  background-color: #121212;
+}
+
+body.dark-mode .card {
+  background-color: #424242;
+  color: white !important;
+}
+
+.hero-section.dark-mode h1,
+.hero-section.dark-mode span {
+  color: #f1f1f1;
+}
